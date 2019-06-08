@@ -47,7 +47,7 @@ input {
     outline: none;
     border-radius: 30px;
     padding: 3px 15px;
-    font-size: 1.5em;
+    font-size: 1.5em; 
     margin: 1em;
     font-family: 'Montserrat', sans-serif;
 }
@@ -72,7 +72,7 @@ button, .guessSubmit {
     align-items: center;
 }
 
-@media (max-width:744px) {
+@media (max-width:750px) {
     .head {
         font-size: 3.2em;
     }
@@ -82,7 +82,7 @@ button, .guessSubmit {
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:606px) {
     .head {
         font-size: 2.5em;
     }
@@ -98,7 +98,7 @@ button, .guessSubmit {
     }
 
     input, button, .guessSubmit, p {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 }
 
@@ -107,12 +107,17 @@ button, .guessSubmit {
         font-size: 1.7em;
     }
 
-    input, button, .guessSubmit, p {
-        font-size: 0.6em;
+    input, button, .guessSubmit {
+        font-size: 0.75em;
+        margin: 0.8em;
+    }
+
+    p{
+        font-size: 0.7em;
     }
 }
 
-@media (max-width:344px) {
+@media (max-width:400px) {
     .head {
         font-size: 1.4em;
     }
@@ -121,7 +126,53 @@ button, .guessSubmit {
         font-size: 1em;
     }
 
-    input, button, .guessSubmit, p {
+    input, button, .guessSubmit {
+        font-size: 0.7em;
+        padding: 2px 10px;
+        margin: 0.6em;
+    }
+
+    p {
+        font-size: 0.65em;
+    }
+}
+
+@media (max-width:369px) {
+    .head {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    input, button, .guessSubmit {
+        font-size: 0.7em;
+        padding: 2px 10px;
+        margin: 0.6em;
+    }
+
+    p {
+        font-size: 0.55em;
+    }
+}
+
+@media (max-width:327px) {
+    .head {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    input, button, .guessSubmit {
+        font-size: 0.6em;
+        padding: 2px 9px;
+        margin: 0.6em;
+    }
+
+    p {
         font-size: 0.5em;
     }
 }
