@@ -6,7 +6,7 @@ const guessSubmit   = document.querySelector('.guessSubmit');
 const guessField    = document.querySelector('.guessField');
 const resultDiv     = document.querySelector('.resultParas');
 const score         = document.querySelector('.score');
-let finalScore      = 10;
+let finalScore      = 10; 
 let guessCount      = 1;
 let resetButton;
 
@@ -14,7 +14,7 @@ const checkGuess = () => {
     let userGuess = Number(guessField.value);
 
     if (guessCount === 1) {
-        previousGuess.textContent = 'Previous guesses: ';
+        previousGuess.textContent = 'Previous guess(es): ';
     }
 
     previousGuess.textContent += userGuess + ' ';
