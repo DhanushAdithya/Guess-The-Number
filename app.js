@@ -47,7 +47,14 @@ const checkGuess = () => {
     guessField.focus();
 }
 
+const enter = () => {
+    if (event.keyCode == 13) {
+        document.getElementById('guess').click()
+    }
+}
+
 guessSubmit.addEventListener('click', checkGuess);
+guessField.addEventListener('keydown',enter);
 
 const setGameOver = () => {
     guessField.disabled      = true;
