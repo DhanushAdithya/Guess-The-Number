@@ -10,6 +10,7 @@ body {
 .main {
     background-color: blueviolet;
     height: 100vh;
+    overflow-y: hidden;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -70,6 +71,12 @@ button, .guessSubmit {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.credit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 @media (max-width:750px) {
