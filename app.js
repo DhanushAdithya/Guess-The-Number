@@ -87,7 +87,7 @@ const resetGame = () => {
     resetButton.parentNode.removeChild(resetButton);
     guessField.disabled  = false;
     guessSubmit.disabled = false;
-    guessField.value     = '';
+    guessField.value     = '';  
     guessField.focus();
     rightWrong.style.backgroundColor = 'transparent';
     random = Math.floor(Math.random() * 100) + 1;
