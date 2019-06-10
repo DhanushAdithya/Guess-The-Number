@@ -1,13 +1,13 @@
-let random          = Math.floor(Math.random() * 100) + 1;
-const previousGuess = document.querySelector('.guesses');
-const rightWrong    = document.querySelector('.lastResult');
-const lowOrHigh     = document.querySelector('.lowOrHi');
-const guessSubmit   = document.querySelector('.guessSubmit');
-const guessField    = document.querySelector('.guessField');
-const resultDiv     = document.querySelector('.resultParas');
-const score         = document.querySelector('.score');
-let finalScore      = 10; 
-let guessCount      = 1;
+let random           = Math.floor(Math.random() * 100) + 1;
+const previousGuess  = document.querySelector('.guesses');
+const rightWrong     = document.querySelector('.lastResult');
+const lowOrHigh      = document.querySelector('.lowOrHi');
+const guessSubmit    = document.querySelector('.guessSubmit');
+const guessField     = document.querySelector('.guessField');
+const resultDiv      = document.querySelector('.resultParas');
+const score          = document.querySelector('.score');
+let finalScore       = 10; 
+let guessCount       = 1;
 let resetButton;
 
 const checkGuess = () => {
