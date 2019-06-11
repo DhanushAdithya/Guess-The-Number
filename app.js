@@ -6,7 +6,7 @@ const guessSubmit    = document.querySelector('.guessSubmit');
 const guessField     = document.querySelector('.guessField');
 const resultDiv      = document.querySelector('.resultParas');
 const score          = document.querySelector('.score');
-let finalScore       = 10; 
+let finalScore       = 10;
 let guessCount       = 1;
 let resetButton;
 
@@ -54,7 +54,7 @@ const enter = () => {
 }
 
 guessSubmit.addEventListener('click', checkGuess);
-guessField.addEventListener('keydown',enter);
+guessField.addEventListener('keydown', enter);
 
 const setGameOver = () => {
     guessField.disabled      = true;
@@ -63,7 +63,7 @@ const setGameOver = () => {
     guessSubmit.style.cursor = 'no-drop';
     guessSubmit.style.color  = '#4e4e4e';
     lowOrHigh.style.display  = 'none';
-    score.textContent = finalScore;
+    score.textContent        = finalScore;
     resetButton              = document.createElement('button');
     resetButton.textContent  = 'Start New Game';
     resultDiv.appendChild(resetButton);
@@ -76,8 +76,8 @@ const resetGame = () => {
     guessSubmit.style.cursor = 'pointer';
     guessField.style.cursor  = 'text';
     score.textContent        = '';
-    finalScore = 10;
-    guessCount = 1;
+    finalScore               = 10;
+    guessCount               = 1;
     const resetParas = document.querySelectorAll('.resultParas p');
 
     for (let i = 0; i < resetParas.length; i++) {
@@ -87,7 +87,7 @@ const resetGame = () => {
     resetButton.parentNode.removeChild(resetButton);
     guessField.disabled  = false;
     guessSubmit.disabled = false;
-    guessField.value     = '';  
+    guessField.value     = '';
     guessField.focus();
     rightWrong.style.backgroundColor = 'transparent';
     random = Math.floor(Math.random() * 100) + 1;
