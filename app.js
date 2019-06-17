@@ -78,7 +78,7 @@ const resetGame = () => {
     score.textContent        = '';
     finalScore               = 10;
     guessCount               = 1;
-    const resetParas = document.querySelectorAll('.resultParas p');
+    const resetParas         = document.querySelectorAll('.resultParas p');
 
     for (let i = 0; i < resetParas.length; i++) {
         resetParas[i].textContent = '';
